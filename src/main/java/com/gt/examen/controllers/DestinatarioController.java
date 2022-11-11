@@ -69,7 +69,7 @@ public class DestinatarioController {
         return ResponseEntity.ok(destinatarioServices.findAll());
     }
      
-     @PostMapping("util/enviarEmail/AdminUsuarios")
+     @PostMapping("util/enviarEmail/AdminCorreos")
     //@ApiOperation(value = "Enviar Correos Administracion de Usuarios")
     public Boolean enviarEmailAdminUsuarios(@RequestBody EmailParameters emailParameters) throws MessagingException, IOException {
         return destinatarioServices.sendEmeilAdminUsuarios(emailParameters);
